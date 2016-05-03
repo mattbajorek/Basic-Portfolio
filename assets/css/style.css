@@ -33,7 +33,7 @@ body {
 	color: #777777;
 }
 
-h1, h2 {
+h1, h2{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: bold;
 }
@@ -44,6 +44,10 @@ h1 {
 
 h2 {
 	font-size: 20px;
+}
+
+.banner h2 {
+	font-weight: normal;
 }
 
 .name {
@@ -94,6 +98,7 @@ hr {
 
 p {
 	line-height: 2em;
+	margin-top: 20px;
 }
 
 .about-me, .connect-with-me {
@@ -110,11 +115,33 @@ p {
 	margin-bottom: 40px;
 }
 
-.about-me img {
+.about-me > img {
 	height: 200px;
 	width: 200px;
 	float: left;
-	margin: 10px 20px 0 0;
+	margin: 20px 20px 0 0;
+}
+
+.image-relative {
+	position: relative;
+	float: left;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.float-right {
+	float: right;
+}
+
+.banner {
+	width: 275px;
+	text-align: center;
+	background: #4aaaa5;
+	color: #fff;
+	padding: 20px;
+	margin: 0px;
+	position: absolute;
+	bottom: 10px;
 }
 
 .connect-with-me {
@@ -128,7 +155,7 @@ p {
 	margin-top: 15px;
 }
 
-a:nth-of-type(2) {
+.connect-with-me a:nth-of-type(2) {
 	margin-left: 9px;
 	margin-right: 9px;
 }
@@ -172,7 +199,7 @@ input[type=text], textarea {
     border: #dddddd solid 1px;
 }
 
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus, textarea:focus, input[type=button]:focus {
     outline: none;
     border: #4aaaa5;
     box-shadow: inset 0 0 5px #4aaaa5, 0 0 5px #4aaaa5;
@@ -187,7 +214,7 @@ textarea {
 	height: 150px;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button] {
     background: #4aaaa5;
     border: none;
     color: white;
