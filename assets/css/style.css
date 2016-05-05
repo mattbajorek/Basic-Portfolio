@@ -10,21 +10,12 @@ html, body {
 }
 
 header {
-	position: absolute;
 	width: 100%;
-	height: 90px;
+	overflow: auto;
 	z-index: -1;
 	background: #fff;
 	border-bottom: #cccccc solid 2px;
 	margin-bottom: 30px;
-}
-
-.wrapper {
-	width: 960px;
-	margin: 0 auto;
-	padding: 0;
-	min-height: 100%;
-	margin-bottom: -100px;
 }
 
 body {
@@ -46,23 +37,82 @@ h2 {
 	font-size: 20px;
 }
 
-.banner h2 {
-	font-weight: normal;
-}
-
-.name {
-	background: #4aaaa5;
-	color: #fff;
-	padding: 30px;
-	margin: 0px;
-	border-bottom: #cccccc solid 2px;
-	margin-bottom: 40px;
-	float: left;
-}
-
 li {
 	display: inline;
 	padding: 0 20px;	
+}
+
+hr {
+	border: #dddddd;
+	background-color: #dddddd;
+	height: 3px;
+	margin-top: 25px;
+}
+
+p {
+	line-height: 2em;
+	margin-top: 20px;
+}
+
+footer {
+	/*position: absolute;*/
+	clear: both;
+	width: 100%;
+	z-index: -1;
+	background: #666666;
+	border-top: #4aaaa5 solid 10px;
+	color: #dddddd;
+	text-align: center;
+	font-size: 10px;
+	padding-top: 40px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 12px;
+    border: #dddddd solid 1px;
+}
+
+input[type=text] {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+textarea {
+	height: 150px;
+}
+
+input[type=button] {
+    background: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+form {
+	margin-top: 20px;
+	line-height: 2em;
+}
+
+input[type=text]:focus, textarea:focus, input[type=button]:focus {
+    outline: none;
+    border: #4aaaa5;
+    box-shadow: inset 0 0 5px #4aaaa5, 0 0 5px #4aaaa5;
+}
+
+a:link, a:visited {
+	color: #777777;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #4aaaa5;
+	text-decoration: underline;
 }
 
 li:nth-child(2) {
@@ -74,6 +124,31 @@ li:nth-child(3) {
 	padding-right: 0;
 }
 
+.name {
+	background: #4aaaa5;
+	color: #fff;
+	padding: 30px;
+	margin: 0px;
+	float: left;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -100px;
+}
+
+.container1 {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container2 {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+}
+
 .tabs {
 	margin-top: 35px;
 	float: right;
@@ -82,23 +157,6 @@ li:nth-child(3) {
 .teal {
 	color: #4aaaa5;
 	margin-top: 0;
-}
-
-hr {
-	border: #dddddd;
-	background-color: #dddddd;
-	height: 3px;
-	margin-top: 25px;
-}
-
-.connect-with-me hr {
-	height: 2px;
-	margin-top: 20px;
-}
-
-p {
-	line-height: 2em;
-	margin-top: 20px;
 }
 
 .about-me, .connect-with-me {
@@ -113,13 +171,6 @@ p {
 	clear: both;
 	float: left;
 	margin-bottom: 40px;
-}
-
-.about-me > img {
-	height: 200px;
-	width: 200px;
-	float: left;
-	margin: 20px 20px 0 0;
 }
 
 .image-relative {
@@ -149,6 +200,22 @@ p {
 	float: right;
 }
 
+.wrapper:after {
+	content: "";
+	display: block;
+}
+
+.site-footer, .wrapper:after {
+	height: 100px;
+}
+
+.about-me > img {
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin: 20px 20px 0 0;
+}
+
 .connect-with-me img {
 	height: 60px;
 	width: 60px;
@@ -160,74 +227,13 @@ p {
 	margin-right: 9px;
 }
 
-footer {
-	/*position: absolute;*/
-	clear: both;
-	width: 100%;
-	z-index: -1;
-	background: #666666;
-	border-top: #4aaaa5 solid 10px;
-	color: #dddddd;
-	text-align: center;
-	font-size: 10px;
-	padding-top: 40px;
+.banner h2 {
+	font-weight: normal;
 }
 
-.wrapper:after {
-	content: "";
-	display: block;
-}
-
-.site-footer, .wrapper:after {
-	height: 100px;
-}
-
-a:link, a:visited {
-	color: #777777;
-	text-decoration: none;
-}
-
-a:hover, a:active {
-	color: #4aaaa5;
-	text-decoration: underline;
-}
-
-input[type=text], textarea {
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 12px;
-    border: #dddddd solid 1px;
-}
-
-input[type=text]:focus, textarea:focus, input[type=button]:focus {
-    outline: none;
-    border: #4aaaa5;
-    box-shadow: inset 0 0 5px #4aaaa5, 0 0 5px #4aaaa5;
-}
-
-input[type=text] {
-    margin-bottom: 10px;
-    font-size: 12px;
-}
-
-textarea {
-	height: 150px;
-}
-
-input[type=button] {
-    background: #4aaaa5;
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 5px;
-}
-
-form {
+.connect-with-me hr {
+	height: 2px;
 	margin-top: 20px;
-	line-height: 2em;
 }
 
 .connect-with-me a {
